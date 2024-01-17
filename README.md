@@ -1,7 +1,10 @@
-# placeholder
-placeholder (cloudflare) pages for my reserved domains
-## reserved domains
-- [strr.cc](https://strr.cc)
+# Placeholder
+Placeholder site that's hosted on CloudFlare pages for my reserved domains
+## Reserved Domains
 - [webpages.directory](https://webpages.directory)
 - [texts.land](https://texts.land)
-- [snakery.io](https://snakery.io)
+- [usewia.com](https://usewia.com)
+- [somethingies.com](https://somethingies.com)
+- <s>[snakery.io](https://snakery.io)</s>
+- <s>[strr.cc](https://strr.cc)</s>
+- <s>[chrr.io](https://chrr.io)</s>

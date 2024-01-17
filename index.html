@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>placeholder.</title>
+    <title>A Placeholder.</title>
     <script src="https://yiu.ch/favicon.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/jmk3owh.css">
     <style>
         :root {
             touch-action: pan-x pan-y;
             height: 100% 
         }
+        .mailtoui-modal-content {
+            cursor: default;
+        }
+        .mailtoui-modal-content * {
+            font-weight: bold;
+        }
         body {
             margin: unset;
             overflow: hidden;
             background-color: black;
+            font-family: "neulis-sans", Arial, sans-serif;
         }
         body * {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
             user-select: none;
             -webkit-user-select: none;
             -moz-user-select: none;
         }
-        body.cursor * { cursor: none !important; }
+        body.cursor, body.cursor main * { cursor: none; }
         main {
             position: fixed;
             width: 100%;
@@ -47,9 +54,9 @@
             width: 20px;
             height: 20px;
         }
-        button {
+        main button {
             position: fixed;
-            top: 0px;
+            top: 0;
             cursor: inherit;
             border: none;
             padding: 15px;
@@ -59,21 +66,21 @@
             mix-blend-mode: difference;
             transition-duration: 200ms;
         }
-        button > span {
+        main button > span {
             font-weight: bold;
             color: rgb(135, 135, 255);
         }
-        button.cursor {
+        main button.cursor {
             width: 175px;
-            left: 0px;
+            left: 0;
             border-bottom-right-radius: 15px;
         }
-        button.dvd {
+        main button.dvd {
             width: 150px;
-            right: 0px;
+            right: 0;
             border-bottom-left-radius: 15px;
         }
-        div.text {
+        main div.text {
             position: fixed;
             width: fit-content;
             height: fit-content;
@@ -84,22 +91,22 @@
             color: white;
             mix-blend-mode: difference;
         }
-        div.text > h1 { color: white; }
-        div.text > span {
+        main div.text > h1 { color: white; }
+        main div.text > span {
             pointer-events: all;
             font-weight: bold;
             color: white;
         }
-        div.text > span > a {
-            padding: 20px 0px 20px 0px;
+        main div.text > span > a {
+            padding: 20px 0 20px 0;
             text-decoration: none;
             font-weight: normal;
             color: hsl(0, 0%, 85%);
         }
-        div.text > span > a:hover { text-decoration: underline; }
-        div.text > span > a:active { text-decoration: none; }
+        main div.text > span > a:hover { text-decoration: underline; }
+        main div.text > span > a:active { text-decoration: none; }
 
-        img.dvd {
+        main img.dvd {
             position: fixed;
             width: 175px;
             top: 50px;
@@ -107,17 +114,17 @@
             transition: opacity 200ms ease 0ms;
             -webkit-touch-callout: none;
         }
-        img.dvd:hover { opacity: 0.7; }
+        main img.dvd:hover { opacity: 0.7; }
     </style>
 </head>
 <body class="cursor">
     <main>
-        <img class="dvd" src="dvd.png" draggable="false">
+        <img class="dvd" src="dvd.png" alt="DVD Logo" draggable="false">
         <button class="cursor">cursor: <span>custom</span>;</button>
         <button class="dvd">dvd = <span>true</span>;</button>
         <div class="text">
-            <h1>placeholder.</h1>
-            <span><a class="mail" href="mailto:me@yiu.ch">me@yiu.ch</a> | <a href="https://yiu.ch">https://yiu.ch</a></span>
+            <h1>An Inconspicuous Placeholder.</h1>
+            <span><a class="mail mailtoui" href="mailto:me@yiu.ch">Me@Yiu.Ch</a> | <a href="https://yiu.ch">https://Yiu.Ch</a></span>
         </div>
     </main>
     <span class="cursor"></span>
@@ -253,5 +260,6 @@
             }
         })
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
 </body>
 </html>
